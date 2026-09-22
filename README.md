@@ -34,6 +34,7 @@ AI Agent의 Tool Calling과 Agent Loop를 직접 구현해보는 학습용 PoC�
 - Tool 실행
 - Tool 결과를 `ToolMessage`로 LLM에 전달
 - Tool 결과를 기반으로 자연어 응답 생성
+- Agent Loop를 이용한 반복적인 Tool Calling 구현
 
 현재 사용 중인 Tool:
 
@@ -106,7 +107,8 @@ project-agent-poc/
 ├── tools.py
 ├── tool_calling_test.py
 ├── .gitignore
-└── README.md
+├── README.md
+└── agent_loop_test.py
 ```
 
 ---
@@ -131,7 +133,7 @@ project-agent-poc/
 - [x] Multiple Tool Calls 처리
 - [x] Tool 결과를 LLM에 다시 전달
 - [x] 자연어 최종 응답 생성
-- [ ] Agent Loop 구현
+- [x] Agent Loop 구현
 - [ ] LangGraph 적용
 - [ ] State / Node / Edge 실습
 - [ ] Conditional Edge 실습
