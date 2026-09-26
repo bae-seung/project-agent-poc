@@ -37,6 +37,8 @@ AI Agent의 Tool Calling과 Agent Loop를 직접 구현해보는 학습용 PoC�
 - Agent Loop를 이용한 반복적인 Tool Calling 구현
 - LangGraph를 이용한 Agent Loop 구현
 - State, Node, Edge, Conditional Edge를 이용한 Tool Calling 흐름 구현
+- LangGraph `interrupt()`를 이용한 Human-in-the-loop 구현
+- Checkpointer와 `Command(resume=...)`를 이용한 승인/거절 후 그래프 재개 구현
 
 현재 사용 중인 Tool:
 
@@ -111,7 +113,8 @@ project-agent-poc/
 ├── .gitignore
 ├── README.md
 ├── agent_loop_test.py
-└── langgraph_agent_test.py
+├── langgraph_agent_test.py
+└── human_in_the_loop_test.py
 ```
 
 ---
@@ -125,7 +128,7 @@ project-agent-poc/
 
 학습 예정:
 
-- Human-in-the-loop
+- BLOCKED 복구 시나리오 구현
 
 
 
@@ -143,7 +146,8 @@ project-agent-poc/
 - [x] LangGraph 적용
 - [x] State / Node / Edge 실습
 - [x] Conditional Edge 실습
-- [ ] Human-in-the-loop 실습
+- [x] Human-in-the-loop 실습
+- [ ] BLOCKED 복구 시나리오 구현
 
 ---
 
